@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://pulsar.sh/docs/
+name: pulsar
+description: >-
+  Pulsar is Exein's open-source, eBPF-powered runtime security tool for IoT and
+  Linux devices. It ships two first-party binaries: a privileged daemon
+  (pulsard) that monitors device activity and runs a rules engine, and a CLI
+  (pulsar) that interacts with the running daemon.
+homepage: https://pulsar.sh/
+repo: https://github.com/exein-io/pulsar
+install:
+  - method: install-script
+    command: "curl --proto '=https' --tlsv1.2 -LsSf https://github.com/exein-io/pulsar/releases/latest/download/pulsar-install.sh | sh"
+  - method: prebuilt-binaries
+    url: https://github.com/exein-io/pulsar/releases/latest
+  - method: from-source
+    command: cargo build (Rust toolchain)
+binaries:
+  - name: pulsard
+    role: daemon
+    description: Runs the monitoring modules and rules engine; requires administrator privileges.
+  - name: pulsar
+    role: cli
+    description: Command-line client that interacts with the running pulsard daemon.
+monitoring_modules:
+  - file-io
+  - network
+  - processes
+  - system-activity
+features:
+  - eBPF-based on-device monitoring
+  - rules engine for threat/alert generation
+notes: >-
+  The published docs describe the two binaries and the four monitoring modules
+  but do not enumerate the full pulsar subcommand surface; only documented
+  behavior is captured here. No subcommands are fabricated.

@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/exein-io
+note: >-
+  Exein publishes open-source security tooling (runtime agent, CVE store/API,
+  Yocto layer) rather than API client SDKs. These are first-party distributable
+  artifacts from the exein-io GitHub organization. Exein does not publish a
+  hosted public API, so no client-library SDKs exist to catalog.
+packages:
+  - language: rust
+    registry: github-releases
+    name: pulsar
+    description: Modular, eBPF-powered runtime security tool/agent for IoT and Linux.
+    url: https://github.com/exein-io/pulsar
+    install: "curl --proto '=https' --tlsv1.2 -LsSf https://github.com/exein-io/pulsar/releases/latest/download/pulsar-install.sh | sh"
+    binaries: [pulsard, pulsar]
+    official: true
+  - language: rust
+    registry: github
+    name: kepler
+    description: NIST-based CVE lookup store and REST API (CPE 2.3 tree expressions, version-range evaluation).
+    url: https://github.com/exein-io/kepler
+    install: "docker compose build && docker-compose up"
+    official: true
+  - language: bitbake
+    registry: github
+    name: meta-exein
+    description: Exein layer for Yocto to integrate Pulsar/runtime security into embedded Linux builds.
+    url: https://github.com/exein-io/meta-exein
+    official: true

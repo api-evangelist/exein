@@ -1,0 +1,30 @@
+# Exein
+
+> Exein is a Physical AI / embedded and IoT cybersecurity company (Italy). It secures connected devices, firmware, and Linux/RTOS embedded systems through on-device runtime security and AI-powered firmware analysis, mapping findings to standards such as the EU Cyber Resilience Act, ETSI EN 303-645, and IEC 62443. Exein does not publish a hosted public API; its developer surface is open-source security tooling on GitHub (Pulsar, Kepler).
+
+## Products
+- [Exein Runtime](https://www.exein.io/platform/exein-runtime): Real-time, on-device threat detection for resource-constrained Physical AI, Linux, and RTOS devices.
+- [Exein Analyzer](https://www.exein.io/platform/exein-analyzer): AI-powered firmware security — binary analysis + SBOM ingestion, vulnerability prioritization, and CRA/compliance mapping.
+
+## Open Source Tooling
+- [Pulsar](https://github.com/exein-io/pulsar): Modular, eBPF-powered runtime security tool/agent for IoT and Linux (docs at https://pulsar.sh/).
+- [Kepler](https://github.com/exein-io/kepler): NIST-based CVE lookup store and REST API, powered by Rust (self-hosted, default http://localhost:8000).
+- [meta-exein](https://github.com/exein-io/meta-exein): Exein layer for Yocto.
+
+## Applications
+- [Analyzer login](https://analyzer.exein.io/): Web application for Exein Analyzer.
+- [Runtime](https://runtime.exein.io/): Web application for Exein Runtime.
+- [Photon](https://photon.exein.io/): Related Exein project.
+
+## Docs & Repos
+- [GitHub organization](https://github.com/exein-io)
+- [Pulsar documentation](https://pulsar.sh/docs/)
+
+## Resources
+- [Blog](https://www.exein.io/blog)
+- [Privacy Policy](https://www.exein.io/privacy-policy)
+
+## Repo Artifacts
+- [packages](https://raw.githubusercontent.com/api-evangelist/exein/refs/heads/main/packages/exein-packages.yml)
+- [cli](https://raw.githubusercontent.com/api-evangelist/exein/refs/heads/main/cli/exein-cli.yml)
+- [domain-security](https://raw.githubusercontent.com/api-evangelist/exein/refs/heads/main/security/exein-domain-security.yml)

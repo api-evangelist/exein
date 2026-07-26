@@ -1,9 +1,27 @@
 aid: exein
 name: exein
-description: exein is a company surfaced as a portfolio company of balderton-capital, hv-capital, partech
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Exein is a Physical AI and embedded/IoT cybersecurity company (Italy) that secures connected
+  devices, firmware, and Linux/RTOS embedded systems. Its platform pairs on-device runtime
+  threat detection (Exein Runtime) with AI-powered firmware analysis and SBOM ingestion (Exein
+  Analyzer), mapping findings to standards including the EU Cyber Resilience Act, ETSI EN 303-645,
+  IEC 62443, RED 3.3, and the US Cyber Trust Mark. Exein does not publish a hosted public REST
+  API; its developer surface is open-source security tooling in the exein-io GitHub organization —
+  notably Pulsar (an eBPF-powered runtime security agent) and Kepler (a NIST-based CVE lookup
+  store and API). Surfaced as a portfolio company of balderton-capital, hv-capital, and partech.
 url: https://raw.githubusercontent.com/api-evangelist/exein/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/685fce904fe880c8d21eee20/6a58a6a017fa871a4e8fc146_f9fb707b4efeb3f4bb7903fc002bbc42_OGP.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,9 +32,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Security
+- Cybersecurity
+- IoT
+- Embedded
+- Firmware
+- Runtime Security
+- eBPF
+- Physical AI
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +52,27 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.exein.io/
+  url: https://www.exein.io/
+- type: GitHubOrganization
+  url: https://github.com/exein-io
+- type: Documentation
+  url: https://pulsar.sh/docs/
+- type: Blog
+  url: https://www.exein.io/blog
+- type: Login
+  url: https://analyzer.exein.io/
+- type: PrivacyPolicy
+  url: https://www.exein.io/privacy-policy
+- type: Packages
+  url: packages/exein-packages.yml
+- type: CLI
+  url: cli/exein-cli.yml
+- type: LLMsTxt
+  url: llms/exein-llms.txt
+- type: DomainSecurity
+  url: security/exein-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
