@@ -10,6 +10,17 @@ description: >-
   notably Pulsar (an eBPF-powered runtime security agent) and Kepler (a NIST-based CVE lookup
   store and API). Surfaced as a portfolio company of balderton-capital, hv-capital, and partech.
 url: https://raw.githubusercontent.com/api-evangelist/exein/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
